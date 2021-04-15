@@ -17,29 +17,28 @@
       href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
       rel="stylesheet"
     />
-    <script src="carrot.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
     <title>Carrot Game</title>
   </head>
   <body>
-    <section class="section">
+    <section class="game">
       <header class="header">
         <button class="play">
           <i class="fas fa-play"></i>
         </button>
         <div class="timer">
-          <span class="time">00:00</span>
+          <span class="time">⏰</span>
         </div>
         <div class="counter">0</div>
       </header>
-      <main class="main">
-        <div class="inital">welcome! Push the Play button!!😜</div>
-      </main>
-      <div class="display__none">
-        <button class="restart__btn">
-          <i class="fas fa-redo-alt"></i>
-        </button>
-        <span class="restart__comment">you win!</span>
-      </div>
+      <section class="game-field"></section>
+      <div class="initial-comment">welcome! Push the Play button!!😜</div>
+    </section>
+    <section class="pop-up display-none">
+      <button class="restart__btn">
+        <i class="fas fa-redo-alt"></i>
+      </button>
+      <span class="pop-up__comment">you win!</span>
     </section>
   </body>
 </html>
