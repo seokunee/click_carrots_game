@@ -103,6 +103,7 @@ class Game {
 
   fail = () => {
     this.end();
+    Sound.playAlert();
     this.gameFinishBanner.message("YOU LOST 😜");
   };
 
